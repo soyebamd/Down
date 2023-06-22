@@ -1,0 +1,19 @@
+{% assign arrayTest = "soyeb, wow, sanaya, fatime" | split : ',' %}
+<ul>
+{% for test in arrayTest %}
+<li>
+{{ test }}
+</li>
+  {% endfor %}
+
+</ul>
+
+
+<ul>
+{% for ss in collections['all'].products %}
+<li>
+{{ ss.title }}
+</li>
+  {% endfor %}
+
+</ul>
